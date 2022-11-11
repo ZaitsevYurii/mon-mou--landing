@@ -1,0 +1,35 @@
+.footer {
+	padding: 100px 0 100px;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__nav-list {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	&__nav-link {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 18px;
+		text-transform: uppercase;
+		color: $nav-link-color;
+	}
+
+	&__connect-list {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	&__pay {
+		display: flex;
+		align-items: center;
+		gap: 90px;
+	}
+}

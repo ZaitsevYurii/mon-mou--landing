@@ -1,0 +1,30 @@
+.bag {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	@include tablets {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	&__tel {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 22px;
+		color: $nav-link-color;
+	}
+
+	&__search {
+		border: none;
+		outline: none;
+		background-color: transparent;
+	}
+
+	&__buy {
+		border: none;
+		outline: none;
+		background-color: transparent;
+	}
+}

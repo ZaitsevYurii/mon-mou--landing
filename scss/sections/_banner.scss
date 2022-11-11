@@ -1,0 +1,38 @@
+.banner {
+	padding: 230px 0 306px;
+	background-image: url("/img/banner-bg.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	&__content {
+		max-width: 473px;
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+	}
+
+	&__title {
+		font-size: 55px;
+		line-height: 63px;
+		columns: $text-color;
+	}
+
+	&__descr {
+		font-size: 29px;
+		line-height: 33px;
+		color: $text-color;
+	}
+
+	&__link {
+		display: block;
+		padding: 20px 28px;
+		max-width: 250px;
+		background-color: transparent;
+		border: 1px solid #EFD2C2;
+
+		font-size: 20px;
+		line-height: 23px;
+		color: $text-color;
+	}
+}

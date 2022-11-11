@@ -1,0 +1,98 @@
+.slider {
+	padding: 140px 0 80px;
+
+
+	&__inner {}
+
+	&__title {
+		font-size: 40px;
+		line-height: 46px;
+		text-align: center;
+		letter-spacing: 0.08em;
+		color: $text-color;
+		margin-bottom: 36px;
+	}
+
+	&__prev {
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+
+		position: absolute;
+		left: -20px;
+		top: 50%;
+		transform: translateX(-50%);
+	}
+
+	&__next {
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+
+		position: absolute;
+		right: -20px;
+		top: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.slider-cards {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+
+	&__item {
+		padding: 10px 20px;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+
+	&__descr {
+		font-size: 16px;
+		line-height: 18px;
+		color: $text-color;
+	}
+
+	&__price {
+		font-size: 20px;
+		line-height: 23px;
+		color: $text-color;
+	}
+
+	&__item--one {
+		background-image: url("/img/slider/Rectangle\ 10.png");
+		width: 380px;
+		height: 380px;
+	}
+
+	&__item--two {
+		background-image: url("/img/slider/Rectangle\ 11.png");
+		width: 380px;
+		height: 380px;
+	}
+
+	&__item--three {
+		background-image: url("/img/slider/Rectangle\ 12.png");
+		width: 380px;
+		height: 380px;
+	}
+
+	&__ordered {
+		max-width: 153px;
+		padding: 10px 37px;
+		border: none;
+		outline: none;
+		background: #2D3538;
+		font-size: 10px;
+		line-height: 12px;
+		letter-spacing: 0.07em;
+		color: #EFD2C2;
+
+		position: absolute;
+		bottom: 20px;
+		right: 30px;
+	}
+}

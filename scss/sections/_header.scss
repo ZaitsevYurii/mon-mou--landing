@@ -1,0 +1,15 @@
+.header {
+	padding: 25px 0 25px;
+	background: #FFFFFF;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media screen and (max-width:640px) {
+			flex-direction: column;
+			gap: 40px;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+.delivery {
+	padding: 12px 0 12px;
+	background-color: $nav-link-color;
+	text-align: center;
+
+	&__desrc {
+		font-size: 40px;
+		line-height: 46px;
+		color: $banner-color;
+	}
+}

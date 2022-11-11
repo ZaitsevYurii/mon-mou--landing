@@ -1,0 +1,28 @@
+@use "./base/variables" as *;
+@use "./base/mixins" as *;
+
+@import "./base/fonts";
+@import "./base/normalize";
+@import "./base/scafolding";
+@import "./base/base";
+
+@import "./sections/header";
+
+@import "./components/nav";
+@import "./components/bag";
+
+@import "./sections/banner";
+@import "./sections/delivery";
+@import "./sections/products";
+
+@import "./components/cards";
+
+@import "./sections/slider";
+@import "./sections/massage";
+
+@import "./components/link";
+
+@import "./sections/about";
+@import "./sections/gallery";
+
+@import "./sections/footer";

@@ -1,0 +1,46 @@
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 30px;
+	grid-template-areas:
+		"one two"
+		"three three";
+
+	&__item {
+		padding: 390px 125px;
+
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		transition: all .4s ease-out;
+
+		&:hover {
+			background-color: #2D3538;
+			opacity: 0.8;
+		}
+	}
+
+	&__descr {
+		font-size: 30px;
+		line-height: 35px;
+		text-align: center;
+		color: $banner-color;
+	}
+
+	&__item--product-one {
+		background-image: url("/img/cards/one.jpg");
+		grid-area: one;
+	}
+
+	&__item--product-two {
+		background-image: url("/img/cards/two.jpg");
+		grid-area: two;
+	}
+
+	&__item--product-three {
+		background-image: url("/img/cards/three.jpg");
+		grid-area: three;
+	}
+}
