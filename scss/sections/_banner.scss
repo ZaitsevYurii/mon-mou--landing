@@ -5,6 +5,10 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 
+	@include laptop {
+		background-position: right center;
+	}
+
 	&__content {
 		max-width: 473px;
 		display: flex;
@@ -22,6 +26,10 @@
 		font-size: 29px;
 		line-height: 33px;
 		color: $text-color;
+
+		@include laptop {
+			max-width: 300px;
+		}
 	}
 
 	&__link {
