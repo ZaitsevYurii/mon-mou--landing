@@ -22,6 +22,10 @@
 		left: -20px;
 		top: 50%;
 		transform: translateX(-50%);
+
+		@include laptop {
+			display: none;
+		}
 	}
 
 	&__next {
@@ -33,6 +37,10 @@
 		right: -20px;
 		top: 50%;
 		transform: translateX(-50%);
+
+		@include laptop {
+			display: none;
+		}
 	}
 }
 
@@ -41,6 +49,10 @@
 	align-items: center;
 	justify-content: space-between;
 	position: relative;
+
+	@include laptop {
+		flex-direction: column;
+	}
 
 	&__item {
 		padding: 10px 20px;
@@ -66,18 +78,30 @@
 		background-image: url("/img/slider/Rectangle\ 10.png");
 		width: 380px;
 		height: 380px;
+
+		@include phones {
+			width: 300px;
+		}
 	}
 
 	&__item--two {
 		background-image: url("/img/slider/Rectangle\ 11.png");
 		width: 380px;
 		height: 380px;
+
+		@include phones {
+			width: 300px;
+		}
 	}
 
 	&__item--three {
 		background-image: url("/img/slider/Rectangle\ 12.png");
 		width: 380px;
 		height: 380px;
+
+		@include phones {
+			width: 300px;
+		}
 	}
 
 	&__ordered {
@@ -94,5 +118,9 @@
 		position: absolute;
 		bottom: 20px;
 		right: 30px;
+
+		@include laptop {
+			display: none;
+		}
 	}
 }

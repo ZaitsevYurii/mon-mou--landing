@@ -7,6 +7,14 @@
 		"one two"
 		"three three";
 
+		@include desktop{
+			grid-template-columns: 1fr;
+			grid-template-areas: 
+			"one"
+			"two"
+			"three";
+		}
+
 	&__item {
 		padding: 390px 125px;
 
