@@ -6,6 +6,12 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		@include tablets {
+			flex-direction: column;
+			gap: 40px;
+			justify-content: center;
+		}
 	}
 
 	&__descr {
@@ -16,4 +22,3 @@
 		color: $text-color;
 	}
 }
-
