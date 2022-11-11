@@ -12,7 +12,7 @@
 	}
 
 	&__bg {
-		width: 785px;
+		// width: 785px;
 		height: 1177px;
 	}
 
@@ -25,6 +25,10 @@
 	&__inner {
 		display: flex;
 		justify-content: space-between;
+
+		@include tablets {
+			flex-direction: column;
+		}
 	}
 
 	&__content {
@@ -37,10 +41,18 @@
 
 		&:nth-child(1) {
 			margin-top: 323px;
+
+			@include phones {
+				margin-top: 100px;
+			}
 		}
 
 		&:nth-child(2) {
 			margin-top: 273px;
+
+			@include phones {
+				margin-top: 100px;
+			}
 		}
 	}
 
@@ -48,11 +60,27 @@
 		position: absolute;
 		top: -174px;
 		left: -120px;
+
+		@include tablets {
+			left: 0;
+		}
+
+		@include phones {
+			display: none;
+		}
 	}
 
 	&__content--two {
 		position: absolute;
 		top: 354px;
 		left: -120px;
+
+		@include tablets {
+			left: 0;
+		}
+
+		@include phones {
+			display: none;
+		}
 	}
 }
