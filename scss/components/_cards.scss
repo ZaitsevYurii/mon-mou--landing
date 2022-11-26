@@ -38,17 +38,17 @@
 	}
 
 	&__item--product-one {
-		background-image: url("/img/cards/one.jpg");
+		background-image: url("../img/cards/one.jpg");
 		grid-area: one;
 	}
 
 	&__item--product-two {
-		background-image: url("/img/cards/two.jpg");
+		background-image: url("../img/cards/two.jpg");
 		grid-area: two;
 	}
 
 	&__item--product-three {
-		background-image: url("/img/cards/three.jpg");
+		background-image: url("../img/cards/three.jpg");
 		grid-area: three;
 	}
 }
